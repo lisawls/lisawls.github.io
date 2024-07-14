@@ -1,18 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #35424a;
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
     margin: 0;
 }
 
@@ -27,19 +37,28 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
 section {
     padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 20px 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about, .projects, .contact {
+    border: 1px solid #ddd;
 }
 
 .project {
     margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
 }
 
 .project-link {
@@ -50,15 +69,47 @@ section {
     color: white;
     padding: 10px;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .project-link:hover {
     background: #0056b3;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
-    color: #fff;
+    background: #35424a;
+    color: #ffffff;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
 }
